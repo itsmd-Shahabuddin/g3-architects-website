@@ -11,6 +11,10 @@
 .display-flex{
     display:flex;
 }
+/*text primary*/
+.text-primary{
+    color:#FF900E;
+}
 
 /*dark 02*/
 
@@ -28,6 +32,10 @@
 
 .bg-light{
     background-color:rgba(255, 144, 14, 0.1);
+}
+.section-title{
+    font-size:2.8rem;
+    font-weight:700;
 }
 
 /*button related style*/
@@ -122,25 +130,37 @@ main >section{
 #quick-list{
     font-weight: 500;
 }
-#features{
-    color:#FF900E;
+/*fact related style*/
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
 }
+.fact-card{
+    border: 1px solid #FF900E;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width:240px;
+    height: 240px;
+    border-radius: 8px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight:600;
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+.fact-name{
+    font-size:1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+}
 
 
 
@@ -163,7 +183,25 @@ main >section{
 /* media query */
 
 @media screen and (max-width:576px){
-    .navbar,.nav-links {
+    .navbar,
+    .nav-links,
+    .teams{
         flex-direction: column;
     }
+    .teams-image{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .teams-features{
+        margin-left:20px;
+    }
+}
+
+/* for medium device*/
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .teams-features{
+        margin:30px auto;
+
 }
