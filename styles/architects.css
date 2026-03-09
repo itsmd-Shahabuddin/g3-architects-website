@@ -174,10 +174,6 @@ main >section{
 }
 
 
-
-
-
-
 /*fact related style*/
 
 .fact-container{
@@ -215,7 +211,6 @@ main >section{
     max-width: 540px;
     margin:50px auto;
     text-align: center;
-
 }
 
 .sponsor-company{
@@ -231,16 +226,20 @@ main >section{
     font-weight:700;
     margin-bottom: 24px;
 }
+
+
 .footer-content{
+    display: flex;
+    max-width: 1440px;
+    background-color: #FFF4E7;
+    margin: 130px auto;
+    align-items: center;
     text-align: center;
-    width: 1440px;
-    height: 100px;
-    margin: 0 auto;
+    justify-content: center;
+
 }
-
-
-
-
+  
+    
 
 /* media query */
 
@@ -291,7 +290,7 @@ main >section{
         margin: 0 auto; 
     }
      #experience-badge{
-    
     margin-left:20px;
     margin-top:20px;
+}
 }
