@@ -130,6 +130,54 @@ main >section{
 #quick-list{
     font-weight: 500;
 }
+
+/*feature card related style*/
+#feature-section-title{
+    border-left: #FF900E 5px solid;
+    padding-left: 21px;
+}
+
+
+#experience-badge{
+    padding: 45px 42 px;
+    font-size: 1.5 rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card ,.feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.features{
+    gap:146px;
+}
+
+.featured-architect img{
+    width: 100%;
+}
+
+
+
+
+
+
 /*fact related style*/
 
 .fact-container{
@@ -199,6 +247,7 @@ main >section{
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
+    .features,
     .teams{
         flex-direction: column;
     }
@@ -217,11 +266,16 @@ main >section{
         gap:50px;
 
     }
+    #experience-badge{
+    
+    margin-left:20px;
+    margin-top:20px;
+}
 }
 
 /* for medium device*/
 @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .teams-features{
@@ -232,4 +286,12 @@ main >section{
         gap:50px;
        justify-items: center;
     }
+    .section-title,.fact-description {
+        text-align: center;
+        margin: 0 auto; 
+    }
+     #experience-badge{
+    
+    margin-left:20px;
+    margin-top:20px;
 }
